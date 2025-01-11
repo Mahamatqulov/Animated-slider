@@ -1,6 +1,8 @@
 /* author: Ecem Gokdogan
 https://codepen.io/ecemgo/pen/jOoNePb*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* /* Author: Ecem Gokdogan
+https://codepen.io/ecemgo/pen/jOoNePb */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
 *,
 *::before,
@@ -25,7 +27,6 @@ body {
     #950923 10%,
     #111113 30%
   );
-
 }
 
 .particles {
@@ -48,7 +49,7 @@ body {
 .swiper-slide {
   position: relative;
   width: 200px;
-  height: 500px;
+  height: 400px;
   border-radius: 12px;
   overflow: hidden;
   transition: 1s;
@@ -72,7 +73,7 @@ body {
 
 .swiper-slide img {
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   transition: 1s;
 }
@@ -82,7 +83,7 @@ body {
   left: 20px;
   bottom: 10px;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   font-style: italic;
   letter-spacing: 2px;
@@ -94,7 +95,7 @@ body {
 
 .swiper-slide-active {
   position: relative;
-  width: 350px;
+  width: 300px;
   transition: 1s;
 }
 
@@ -167,4 +168,42 @@ body {
 
 .hidden {
   display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 150px;
+    height: 300px;
+  }
+  .swiper-slide img {
+    height: 300px;
+  }
+  .swiper-slide-active {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+  .swiper-slide {
+    width: 120px;
+    height: 250px;
+  }
+  .swiper-slide img {
+    height: 250px;
+  }
+  .swiper-slide-active {
+    width: 200px;
+  }
+  .swiper-slide p {
+    font-size: 0.8rem;
+  }
+  #play-pause-button {
+    left: 5%;
+    bottom: 10%;
+    padding: 8px;
+  }
 }
